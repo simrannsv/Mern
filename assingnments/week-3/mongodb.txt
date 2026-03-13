@@ -1,0 +1,46 @@
+// Insert documents
+db.emp.insertOne({id:101,name:'rita',skills:["html","css","react"],experiences:[{companyName:"amazon",yearsOfexp:4}]})
+
+db.emp.insertOne({id:102,name:'Shradha',skills:["java","python"],experiences:[{companyName:"flipkart",yearsOfexp:7}]})
+
+db.emp.insertOne({id:103,name:'liya',skills:["javascript","python"],experiences:[{companyName:"myntra",yearsOfexp:10}]})
+
+db.emp.insertOne({id:104,name:'riya',skills:["typescript","python"],experiences:[{companyName:"meesho",yearsOfexp:2}]})
+
+db.emp.insertOne({id:105,name:'viya',skills:["typescript","python"],experiences:[{companyName:"campgemini",yearsOfexp:7}]})
+
+
+// Find employee with skill react
+db.emp.find({skills:"react"})
+
+
+// Add new skill
+db.emp.updateOne({name:"viya"},{$push:{skills:"Express"}})
+
+
+// Add new experience (mistyped field)
+db.emp.updateOne({name:"viya"},{$push:{experince:[{companyname:"meesho",yearsOfExp:9}]}})
+
+
+// Remove last experience
+db.emp.updateOne({name:"rita},{$pop:{experiences:1}})
+
+
+// Insert new employee
+db.emp.insertOne({id:106,name:'vikas',skills:["typescript","java"],experiences:[{companyName:"campgemini",yearsOfexp:14}]})
+
+
+// Add address
+db.emp.updateOne({name:"vikas"},{$push:{address:[{city:"hyderabad",pincode:33333}]}})
+
+
+// Remove last address
+db.emp.updateOne({name:"vikas"},{$pop:{address:1}})
+
+
+// Add address correctly
+db.emp.updateOne({name:"vikas"},{$push:{address:{city:"hyderabad",pincode:33333}}})
+
+
+// Display all documents
+db.emp.find()
