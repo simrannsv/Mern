@@ -1,0 +1,112 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white;
+  border: 2px solid #333;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+/* USERS LIST */
+.users-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+}
+
+/* USER CARD */
+.user-card {
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background-color: white;
+}
+
+.user-card .avatar {
+  font-size: 50px;
+  color: #aaa;
+}
+
+.user-card .user-name {
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+}
+
+.user-card .user-email {
+  font-size: 11px;
+  color: #888;
+  text-align: center;
+}
+
+.user-card .profile-btn {
+  border: 1px solid #333;
+  background: white;
+  padding: 4px 16px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.user-card .profile-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* FOOTER */
+.footer {
+  border: 2px solid #333;
+  padding: 20px 30px;
+  margin: 10px 30px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  background-color: white;
+}
+
+.footer .footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer .footer-col span {
+  font-size: 12px;
+  color: #888;
+}
