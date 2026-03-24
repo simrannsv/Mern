@@ -1,0 +1,83 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f7;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background-color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #444;
+      font-size: 14px;
+    }
+
+    /* HERO IMAGE AREA */
+    .hero {
+      height: 280px;
+      overflow: hidden;
+    }
+
+    /* CARDS CONTAINER */
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+      margin-top: -80px;
+    }
+
+    /* SINGLE CARD */
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* CIRCLE IMAGE */
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* BADGE */
+    .badge {
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      color: white;
+    }
+
+    .travel    { background-color: #5b9bd5; }
+    .technology{ background-color: #f0a500; }
+    .fashion   { background-color: #e05b8a; }
+
+    /* CARD TEXT */
+    .card h4 {
+      font-size: 13px;
+      text-align: center;
+      margin: 0;
+    }
+
+    .card p {
+      font-size: 11px;
+      color: #888;
+      text-align: center;
+      margin: 0;
+    }
