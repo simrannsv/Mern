@@ -15,7 +15,7 @@ app.use(cookieParser())
 //add cors middleware
 //add cors middleware
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: process.env.FRONTEND_URL || "http://localhost:5173",
   credentials: true
 }))
 //body parser middleware
@@ -31,7 +31,7 @@ const connectDB=async()=>{
         await connect(process.env.DB_URL)
         console.log("DB connected")
         //assign port
-        const port=process.env.port || 6000
+        const port=process.env.PORT || 6000
         app.listen(port,()=> console.log(`Server listening on ${port}....`))
     }
     catch(err){
