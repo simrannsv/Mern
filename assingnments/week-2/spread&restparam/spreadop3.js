@@ -1,3 +1,5 @@
+//  Write a function that takes any number of arguments and returns their sum using the rest parameter syntax.
+
 function sum(...args) {
   return args.reduce((total, num) => total + num, 0);
 }
