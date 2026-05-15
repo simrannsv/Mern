@@ -1,6 +1,6 @@
 //Deep copy
 
-
+//In deep copy, a new object is created and all the properties of the original object are copied to the new object.
 const order = {
                   orderId: "ORD1001",
                   customer: {
@@ -19,4 +19,5 @@ let orderCopy=structuredClone(order)
 order.customer.address.city = "Chennai"  
 console.log(order)
 console.log(orderCopy)
-//here only the orginal object got changed not the copy that means reference is created at two different onjects which is 
+//here we have created a deep copy of the order object using structuredClone().
+//When we change the city in the original order object, it does not affect the city in the copied orderCopy object
